@@ -27,7 +27,7 @@ namespace DiscordBot
 
             // Some alternative options would be to keep your token in an Environment Variable or a standalone file.
             // var token = Environment.GetEnvironmentVariable("NameOfYourEnvironmentVariable");
-            var token = File.ReadAllText("token.txt");
+            var token = File.ReadAllText(@"C:\Users\Buxton\source\repos\DiscordBot\DiscordBot\token.txt");
             // var token = JsonConvert.DeserializeObject<AConfigurationClass>(File.ReadAllText("config.json")).Token;
 
             await _client.LoginAsync(TokenType.Bot, token);
