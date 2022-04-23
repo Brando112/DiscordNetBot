@@ -11,9 +11,9 @@ namespace DiscordBot
 {
     public class Program
     {
-        public static Task Main(string[] args) => new Program().MainAsync();
-
         private DiscordSocketClient _client;
+
+        public static Task Main(string[] args) => new Program().MainAsync();
 
         public async Task MainAsync()
         {
